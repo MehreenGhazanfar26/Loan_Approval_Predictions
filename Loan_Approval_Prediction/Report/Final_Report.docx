@@ -1,0 +1,146 @@
+# Loan Approval Prediction Report
+
+## 1. Project Overview
+
+The objective of this project is to develop a machine learning model that predicts whether a loan application will be approved or rejected based on applicant information.
+
+The project aims to assist financial institutions in making faster and more consistent loan approval decisions by analyzing historical applicant data.
+
+A Random Forest classification model was trained and evaluated using a loan approval dataset.
+
+---
+
+## 2. Dataset Information
+
+Dataset Name: Loan Approval Prediction
+
+Total Records: 381
+
+Total Features: 12
+
+Target Variable: Loan_Status
+
+Features Included:
+
+* Gender
+* Married
+* Dependents
+* Education
+* Self_Employed
+* ApplicantIncome
+* CoapplicantIncome
+* LoanAmount
+* Loan_Amount_Term
+* Credit_History
+* Property_Area
+* Loan_Status
+
+---
+
+## 3. Data Quality Assessment
+
+The dataset was inspected for missing values and data quality issues before model training.
+
+Missing values were identified in the following columns:
+
+* Gender
+* Dependents
+* Self_Employed
+* Loan_Amount_Term
+* Credit_History
+
+These missing values were handled during preprocessing to ensure data consistency.
+
+---
+
+## 4. Target Variable Analysis
+
+The target variable was Loan_Status.
+
+Class Distribution:
+
+* Approved Loans (Y): 271
+* Rejected Loans (N): 110
+
+The dataset contains a higher proportion of approved loans compared to rejected loans.
+
+---
+
+## 5. Data Preprocessing
+
+The following preprocessing techniques were applied:
+
+### Missing Value Handling
+
+* Numerical missing values were filled using Mean Imputation.
+* Categorical missing values were filled using Most Frequent (Mode) Imputation.
+
+### Feature Scaling
+
+* StandardScaler was applied to numerical features.
+
+### Data Preparation
+
+The dataset was prepared for machine learning training after handling missing values and feature scaling.
+
+---
+
+## 6. Model Training
+
+A Random Forest Classifier was used for model training.
+
+The dataset was divided into training and testing subsets for evaluation.
+
+The model was trained using the selected features and target variable.
+
+---
+
+## 7. Model Results
+
+Model: Random Forest Classifier
+
+Accuracy Score: 80.52%
+
+Classification Performance:
+
+Class N:
+
+* Precision: 1.00
+* Recall: 0.29
+* F1-Score: 0.44
+
+Class Y:
+
+* Precision: 0.79
+* Recall: 1.00
+* F1-Score: 0.88
+
+Overall Performance:
+
+* Accuracy: 0.81
+* Weighted F1 Score: 0.76
+
+The model achieved satisfactory performance for loan approval prediction.
+
+---
+
+## 8. Business Recommendations
+
+Based on the analysis and model results:
+
+* Credit history appears to be a strong indicator of loan approval.
+* Applicants with stronger financial profiles have a higher likelihood of approval.
+* The model can be used as a preliminary screening tool for loan applications.
+* Additional applicant information may further improve prediction performance.
+
+---
+
+## 9. Conclusion
+
+A machine learning solution was successfully developed to predict loan approval outcomes.
+
+The project included data analysis, preprocessing, model training, and evaluation.
+
+The Random Forest model achieved an accuracy of 80.52% and demonstrated its ability to support loan approval decision-making processes.
+
+This project demonstrates the practical application of machine learning techniques in financial risk assessment and loan approval prediction.
